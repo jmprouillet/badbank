@@ -1,0 +1,79 @@
+{
+  "accounts": [
+    {
+      "name": "jmpl",
+      "email": "jmpl@amail.com",
+      "balance": 0,
+      "password": "secret",
+      "transactions": []
+    },
+    {
+      "name": "zeze",
+      "email": "ze@e.ze",
+      "balance": 0,
+      "password": "ze",
+      "transactions": []
+    },
+    {
+      "name": "sdf",
+      "email": "sdf@df.fsd",
+      "balance": 100,
+      "password": "sdf",
+      "transactions": [
+        {
+          "date": "2018-09-28T01:23:51.763Z",
+          "amount": 100,
+          "type": "deposit"
+        },
+        {
+          "date": "2018-09-28T01:23:53.564Z",
+          "amount": 100,
+          "type": "deposit"
+        },
+        {
+          "date": "2018-09-28T01:23:53.708Z",
+          "amount": 100,
+          "type": "deposit"
+        },
+        {
+          "date": "2018-09-28T01:24:31.009Z",
+          "amount": 100,
+          "type": "withdraw"
+        },
+        {
+          "date": "2018-09-28T01:24:32.471Z",
+          "amount": 100,
+          "type": "withdraw"
+        }
+      ]
+    },
+    {
+      "name": "zed",
+      "email": "sdf@df.fsd",
+      "balance": 0,
+      "password": "qsd",
+      "transactions": []
+    },
+    {
+      "name": "qsd",
+      "email": "qsd@sd.qsd",
+      "balance": 0,
+      "password": "qsd",
+      "transactions": []
+    },
+    {
+      "name": "sqd",
+      "email": "qsd@sd.qsd",
+      "balance": 0,
+      "password": "qsd",
+      "transactions": []
+    },
+    {
+      "name": "Billy Test",
+      "email": "billy@gmail.com",
+      "balance": 0,
+      "password": "secret",
+      "transactions": []
+    }
+  ]
+}
