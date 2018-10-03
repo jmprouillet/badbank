@@ -27,7 +27,7 @@ function create() {
     var name     = document.getElementById('name');
     var email     = document.getElementById('email');
     var password = document.getElementById('password');
-  superagent.get('http://localhost:3000/account/create/'+name.value+'/'+email.value+'/'+password.value)
+  superagent.get('/account/create/'+name.value+'/'+email.value+'/'+password.value)
   .then(function(res) {
     console.log(res);
     showAlert(res.text,'Success');
@@ -38,7 +38,7 @@ function login() {
 
     var email     = document.getElementById('email');
     var password = document.getElementById('password');
-  superagent.get('http://localhost:3000/account/login/'+email.value+'/'+password.value)
+  superagent.get('/account/login/'+email.value+'/'+password.value)
   .then(function(res) {
     console.log(res);
     if(res.type == 'text/html'){
@@ -53,7 +53,7 @@ function login() {
 function deposit() {
     var email     = document.getElementById('email');
     var amount    = document.getElementById('amount');
-    superagent.get('http://localhost:3000/account/deposit/'+email.value+'/'+amount.value)
+    superagent.get('/account/deposit/'+email.value+'/'+amount.value)
   .then(function(res) {
     console.log(res);
     if(res.type == 'text/html'){
@@ -69,7 +69,7 @@ function deposit() {
 function withdraw() {
   var email     = document.getElementById('email');
   var amount    = document.getElementById('amount');
-  superagent.get('http://localhost:3000/account/withdraw/'+email.value+'/'+amount.value)
+  superagent.get('/account/withdraw/'+email.value+'/'+amount.value)
 .then(function(res) {
   console.log(res);
   if(res.type == 'text/html'){
@@ -84,7 +84,7 @@ function withdraw() {
 
 function transactions() {
   var email     = document.getElementById('email');
-  superagent.get('http://localhost:3000/account/transactions/'+email.value)
+  superagent.get('/account/transactions/'+email.value)
 .then(function(res) {
   console.log(res);
   if(res.type == 'text/html'){
@@ -99,7 +99,7 @@ function transactions() {
 
 function balance() {
     var email     = document.getElementById('email');
-    superagent.get('http://localhost:3000/account/get/'+email.value)
+    superagent.get('/account/get/'+email.value)
   .then(function(res) {
     console.log(res);
     if(res.type == 'text/html'){
@@ -113,7 +113,7 @@ function balance() {
 }
 
 function allData() {
-  superagent.get('http://localhost:3000/account/all/')
+  superagent.get('/account/all/')
 .then(function(res) {
   console.log(res);
   if(res.type == 'text/html'){
